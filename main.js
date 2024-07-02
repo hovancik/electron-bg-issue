@@ -7,10 +7,11 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    backgroundColor: '#1D1F21d9',
-    webPreferences: {
+    
+    webPreferences: { 
       preload: path.join(__dirname, 'preload.js')
-    }
+    },
+    backgroundColor: '#1D1F21'
   })
 
   // and load the index.html of the app.
